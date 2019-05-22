@@ -3,7 +3,7 @@ Convert Markdown to TXT
 A very simple converter from .md to .txt
 
 Copyright (C) 2019 - Fred Rique (farique)
-https://github.com/farique1
+https://github.com/farique1/ConvertMD
 
 convmd.py <source> <destination>
 <source>.txt is used if <destination> is ommited.
