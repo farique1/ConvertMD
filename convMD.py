@@ -8,15 +8,15 @@ https://github.com/farique1
 convmd.py <source> <destination>
 <source>.txt is used if <destination> is ommited.
 
-Remove '# ', '## ', '### ' and add '------' underneath and blank lines before and after if needed
-Lone '#'s to blank line
-Remove all '*...*' formatting
+Remove '# ', '## ', '### ' and add '------' underneath; also blank lines before and after if needed.
+Lone '#'s to blank line.
+Remove all '*...*' formatting.
 '- - ' and '- - - ' to '  - ' and '    - '
-Option of code (commented out) to keep indent after "- "
+Option (commented out) to keep indent after '- '
 '>' to '-> '
-'`' to "'"
-Fence code between '~' adding blank line before and after if needed
-Strip image tags '![#'...
+Backtick to single quote
+Fence code between '~' adding blank line before and after if needed.
+Strip image tags '![#...'
 Remove '[]' from link Names (keep the links between '()')
 Do not allow more than one consecutive blank line.
 """
