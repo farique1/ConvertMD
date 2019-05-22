@@ -8,9 +8,9 @@ A very simple converter from .md to .txt
 *Features:*  
 - Remove '#&nbsp; ', '##&nbsp; ', '###&nbsp; ' and add '------' underneath; also blank lines before and after if needed.  
 - Lone '#'s to blank line.  
-- Remove all '*...*' formatting.  
+- Remove all '* ... *' formatting.  
 - '- - ' and '- - - ' to '&nbsp; &nbsp; - ' and '&nbsp; &nbsp; &nbsp; &nbsp; - '  
-- Option (commented out) to keep indent after `- `  
+- Option (commented out) to keep indent after '-&nbsp; ' 
 - '>' to '->&nbsp; '  
 - Backtick to single quote
 - Fence code between '~' adding blank line before and after if needed.  
