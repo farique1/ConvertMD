@@ -2,10 +2,11 @@
 A very simple converter from .md to .txt  
 
 *Usage:*  
+
 `convmd.py <source> <destination>`  
 `<source>.txt` is used if `<destination>` is ommited.  
 
-*Features:*  
+*Features:*
 - Remove '#&nbsp; ', '##&nbsp; ', '###&nbsp; ' and add '------' underneath; also blank lines before and after if needed.  
 - Lone '#'s to blank line.  
 - Remove all '* ... *' formatting.  
