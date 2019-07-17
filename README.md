@@ -25,6 +25,6 @@ Add spaces at the end of lines.
 
 *Usage:*  
 
-`spacesmd.py <source> <destination>`  
+`spacesmd.py <source> <destination> [-ns #]`  
 `<source>` is overwriten if `<destination>` is ommited.  
 `-ns #` changes the number os spaces to add. Default = 2  
