@@ -18,3 +18,13 @@ A very simple converter from .md to .txt
 - Strip image tags '![#...'  
 - Remove '[]' from link Names (keep the links between '()')  
 - Do not allow more than one consecutive blank line.  
+
+
+# SpacesMD  
+Add spaces at the end of lines.  
+
+*Usage:*  
+
+`spacesmd.py <source> <destination>`  
+`<source>` is overwriten if `<destination>` is ommited.  
+`-ns #` changes the number os spaces to add. Default = 2  
