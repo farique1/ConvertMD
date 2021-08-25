@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Add trailing spaces to Markdown
 Prevente the GitHub Markdown format to concatenate lines

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Convert Markdown to TXT
 A very simple converter from .md to .txt
@@ -97,6 +98,8 @@ for line in source:
                 # print line_new.count('*')
                 # print star.group(0), star.group(0)[1:-1]
                 # print line_new
+            else:
+                break
 
         links = re.search(r'\[.+?\]\(.+?\)', line_new)
         while links:
