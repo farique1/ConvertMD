@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
 Add trailing spaces to Markdown
-Prevente the GitHub Markdown format to concatenate lines
+Prevent the GitHub Markdown format to concatenate lines
 
 Copyright (C) 2019 - Fred Rique (farique)
 https://github.com/farique1/ConvertMD
 
-spacesMD.py <source> <destination> -ns #
--ns #    :Number os spaces to add. Default = 2
-Overwrite <source> if <destination> is ommited.
+spacesMD.py [source] [destination] -ns #
+-ns #    :Number of spaces to add. Default = 2
+Uses README.md if no [source] given
+Overwrite [source] if [destination>] is omitted.
 """
 
 import argparse
@@ -19,17 +20,11 @@ fileeSve = ''       # Destination file
 trailing_spaces = 2
 buffercode = []
 
-# Variables
-# image = False
-# bullet = False
-# code = False
-# prev_blank = False
-
 # Set command line
-parser = argparse.ArgumentParser(description='Convert .md to .txt')
-parser.add_argument("input", nargs='?', default=fileeLad, help='Source file')
-parser.add_argument("output", nargs='?', default=fileeSve, help='Destination file, overwrite [source] if missing')
-parser.add_argument("-ns", default=2, type=int, help="Number os spaces to add. Default = 2")
+parser = argparse.ArgumentParser(description='Add trailing spaces to the end of lines to conform with GitHub.')
+parser.add_argument("input", nargs='?', default=fileeLad, help='Source file. Uses README.md if missing.')
+parser.add_argument("output", nargs='?', default=fileeSve, help='Destination file. Overwrite [source] if missing.')
+parser.add_argument("-ns", default=2, type=int, help="Number of spaces to add. Default = 2")
 args = parser.parse_args()
 
 # Apply chosen settings
@@ -39,14 +34,12 @@ if args.output == '':
     fileeSve = fileeLad
 trailing_spaces = ' ' * args.ns
 
-# If there is a file to be oppened after all this
-if fileeLad:
-    file = open(fileeLad, 'r')
-    source = file.readlines()
-    file.close()
-else:
-    parser.error('Source file not found')
-    raise SystemExit(0)
+if not fileeLad:
+    fileeLad = 'README.md'
+
+file = open(fileeLad, 'r')
+source = file.readlines()
+file.close()
 
 for line in source:
     line_alt = line
