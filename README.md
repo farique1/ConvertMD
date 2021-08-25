@@ -22,6 +22,7 @@ A very simple converter from .md to .txt
 
 # SpacesMD  
 Add spaces at the end of lines.  
+Helps conform to GitHib markdown standards.
 
 *Usage:*  
 
