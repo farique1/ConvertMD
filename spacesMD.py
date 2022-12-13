@@ -34,8 +34,9 @@ if args.output == '':
     fileeSve = fileeLad
 trailing_spaces = ' ' * args.ns
 
-if not fileeLad:
+if fileeLad == '':
     fileeLad = 'README.md'
+    fileeSve = fileeLad
 
 file = open(fileeLad, 'r')
 source = file.readlines()

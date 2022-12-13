@@ -1,0 +1,3 @@
+python spacesMD.py
+
+pause
