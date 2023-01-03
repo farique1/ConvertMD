@@ -26,6 +26,10 @@ Helps conform to GitHib markdown standards.
   
 *Usage:*  
   
-`spacesmd.py <source> <destination> [-ns #]`  
-`<source>` is overwriten if `<destination>` is ommited.  
-`-ns #` changes the number os spaces to add. Default = 2  
+`spacesmd.py [source] [destination] [-ns <#>] [-all] [-ext <"">] [-gn]`  
+`README.md` is used if `source` is omitted.  
+`source` is used if `destination` is omitted.  
+`-ns <#>` changes the number os spaces to add. Default: `2`  
+`-all` ignore `source` and reads all files with a given extension. Default: `False`  
+`-ext <"">` extension of the files to load, without `.`. Default: `md`  
+`-ns #` capitalize the file name and replaces spaces with `_`. Default: `False`  
