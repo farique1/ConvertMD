@@ -79,3 +79,5 @@ for save in fileeSve:
     with open(save[1], 'w') as f:
         for line in buffercode:
             f.write(line)
+
+    print(save[1])
